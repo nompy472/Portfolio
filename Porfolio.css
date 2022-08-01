@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(121, 216, 180);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: lightslategray;
+    position: sticky;
+    width: 100%;
+    height: 80px;
+}
+#navbar {
+    display: block;
+    position: sticky;
+}
+h1 {
+    display: inline-block;
+}
+.icon {
+    width: 500px;
+    height: auto;
+}
+.about {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding: 30px 30px 5px 0px ;
+    margin: 0;
+}
+#welcome-section {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: aqua;
+}
+a:active {
+    color: blue;
+}
+.project-title {
+    text-align: center;
+    background-color: blanchedalmond;
+    border-radius: 30px;
+}
+.project-tile {
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer {
+    background-color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+}
+.facebook {
+    color: white;
+    background-color: #3B5998;
+    padding: 6px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.facebook:hover {
+    opacity: 0.7;
+    color: white;
+    
+}
+.email {
+    color: white;
+    background-color: #0e131e;
+    padding: 6px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.email:hover {
+    opacity: 0.7;
+    color: white;
+}
+.github {
+    color: white;
+    background-color: #0b0b0b;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.github:hover {
+    opacity: 0.7;
+    color: white;
+}
+.call {
+    color: white;
+    background-color: #380404;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.call:hover {
+    opacity: 0.7;
+    color: white;
+}
+.chat {
+    color: white;
+    background-color: #044024;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.chat:hover {
+    opacity: 0.7;
+    color: white;
+}
+@media (max-width:600px) {
+    header {
+        background: #3B5998;
+    }
+    footer {
+        display: block;
+        align-items: center;
+        overflow: scroll;
+    }
+    h3 {
+        text-align: center;
+    }
+}

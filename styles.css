@@ -1,0 +1,43 @@
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+#description {
+    text-align: center;
+}
+#survey-form {
+    background-color: aqua;
+    display: block;
+}
+
+#comments {
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+}
+fieldset {
+    display: flex;
+}
+.improve, .recommendation, .user-details {
+    display: block;
+}
+.name, .email, .age, .roles {
+    display: flex;
+    
+}
+#submit {
+    background-color: aqua;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+#submit:hover {
+    opacity: 0.5;
+    color: beige;
+    background-color: black;
+}
