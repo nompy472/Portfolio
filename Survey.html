@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="Stylesheet" href="Styles/styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><i>Thank you for taking the time to help us improve.</i>
+        </p>
+        <form id="survey-form">
+            <fieldset class="user-details">
+                <label class="name">Name:
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </label>
+                <label class="email">Email:
+                <input type="email" id="email" placeholder="Enter your Email" required>
+                </label>
+                <label class="age">Age:
+                <input type="number" id="number" min="12" max="80" placeholder="How old are you?">
+                </label>
+                <label class="roles">What option best describes your current role?</label>
+                <select id="dropdown" name="role" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="employed">Employed</option>
+                    <option value="other">Other</option>
+                    <option value="preferNo">Prefer not to say</option>
+                </select>
+            </fieldset>
+            <fieldset class="recommendation">
+                <p>Would you recommend us to a friend?</p>
+                <label for="definitely">
+                    <input type="radio" name="user-recommend" id="definitely" value="definitely" checked>
+                    Definitely
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" id="maybe" value="maybe">
+                    Maybe
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" id="not-sure" value="not-sure">
+                    Not sure
+                </label>
+            </fieldset>
+            <fieldset class="improve">
+                <p>What would you like to see improved?
+                    <span>(Check all that apply)</span>
+                </p>
+                <label>
+                    <input type="checkbox" name="prefer" value="Additional classes">
+                    Additional Classes
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="Tutorials">
+                    Tutorials
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="Videos">
+                    Videos
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" name="comment" placeholder="Enter your suggestions here..."></textarea>
+            </fieldset>
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
